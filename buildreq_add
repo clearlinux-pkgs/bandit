@@ -1,0 +1,23 @@
+# This file contains additional build requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+stevedore
+PyYAML-python
+appdirs-python
+oslosphinx-python
+Sphinx-python
+testtools
+testscenarios
+testrepository-python
+python-mock
+hacking
+fixtures-python
+discover-python
+coverage-python
+requests-python
+Jinja2
+docutils-python
+Pygments
+traceback2-python
+unittest2-python
+python-mimeparse
+extras

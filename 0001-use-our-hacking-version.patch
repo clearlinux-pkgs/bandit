@@ -1,0 +1,25 @@
+From ffaa3593af89a1d7edbafc5943d14995c74411c8 Mon Sep 17 00:00:00 2001
+From: "Simental Magana, Marcos" <marcos.simental.magana@intel.com>
+Date: Wed, 30 Sep 2015 11:40:07 -0500
+Subject: [PATCH] use our hacking version
+
+---
+ test-requirements.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test-requirements.txt b/test-requirements.txt
+index 1e7002c..0e145c9 100644
+--- a/test-requirements.txt
++++ b/test-requirements.txt
+@@ -1,7 +1,7 @@
+ coverage>=3.6
+ discover
+ fixtures>=0.3.14
+-hacking>=0.9.2,<0.10
++hacking
+ mock>=1.0
+ python-subunit>=0.0.18
+ testrepository>=0.0.18
+-- 
+2.4.3
+
