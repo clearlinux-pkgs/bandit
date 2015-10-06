@@ -4,7 +4,7 @@
 #
 Name     : bandit
 Version  : 0.13.2
-Release  : 1
+Release  : 2
 URL      : https://pypi.python.org/packages/source/b/bandit/bandit-0.13.2.tar.gz
 Source0  : https://pypi.python.org/packages/source/b/bandit/bandit-0.13.2.tar.gz
 Summary  : Security oriented static analyser for python code.
