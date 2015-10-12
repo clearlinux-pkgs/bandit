@@ -1,0 +1,3 @@
+install -d -m 755 %{buildroot}/usr/share/defaults/bandit
+mv %{buildroot}/usr/etc/bandit/* %{buildroot}/usr/share/defaults/bandit
+rm -rf %{buildroot}/usr/etc

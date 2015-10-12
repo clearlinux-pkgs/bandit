@@ -4,14 +4,13 @@
 #
 Name     : bandit
 Version  : 0.13.2
-Release  : 2
+Release  : 3
 URL      : https://pypi.python.org/packages/source/b/bandit/bandit-0.13.2.tar.gz
 Source0  : https://pypi.python.org/packages/source/b/bandit/bandit-0.13.2.tar.gz
 Summary  : Security oriented static analyser for python code.
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: bandit-bin
-Requires: bandit-config
 Requires: bandit-python
 Requires: bandit-data
 BuildRequires : Jinja2
@@ -55,18 +54,9 @@ A security linter from OpenStack Security
 Summary: bin components for the bandit package.
 Group: Binaries
 Requires: bandit-data
-Requires: bandit-config
 
 %description bin
 bin components for the bandit package.
-
-
-%package config
-Summary: config components for the bandit package.
-Group: Default
-
-%description config
-config components for the bandit package.
 
 
 %package data
@@ -105,6 +95,11 @@ py.test-2.7 --verbose || :
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot}
 python3 -tt setup.py build -b py3 install --root=%{buildroot}
+## make_install_append content
+install -d -m 755 %{buildroot}/usr/share/defaults/bandit
+mv %{buildroot}/usr/etc/bandit/* %{buildroot}/usr/share/defaults/bandit
+rm -rf %{buildroot}/usr/etc
+## make_install_append end
 
 %files
 %defattr(-,root,root,-)
@@ -113,13 +108,10 @@ python3 -tt setup.py build -b py3 install --root=%{buildroot}
 %defattr(-,root,root,-)
 /usr/bin/bandit
 
-%files config
-%defattr(-,root,root,-)
-%config /usr/etc/bandit/bandit.yaml
-
 %files data
 %defattr(-,root,root,-)
 /usr/share/bandit/wordlist/default-passwords
+/usr/share/defaults/bandit/bandit.yaml
 
 %files python
 %defattr(-,root,root,-)
