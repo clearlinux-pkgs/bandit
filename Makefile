@@ -1,5 +1,5 @@
 PKG_NAME := bandit
-URL := https://pypi.python.org/packages/source/b/bandit/bandit-0.16.2.tar.gz
+URL := http://tarballs.openstack.org/bandit/bandit-0.17.3.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
