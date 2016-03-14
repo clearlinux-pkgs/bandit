@@ -4,7 +4,7 @@
 #
 Name     : bandit
 Version  : 0.17.3
-Release  : 10
+Release  : 11
 URL      : http://tarballs.openstack.org/bandit/bandit-0.17.3.tar.gz
 Source0  : http://tarballs.openstack.org/bandit/bandit-0.17.3.tar.gz
 Summary  : Security oriented static analyser for python code.
@@ -14,11 +14,11 @@ Requires: bandit-bin
 Requires: bandit-python
 Requires: bandit-data
 BuildRequires : PyYAML
+BuildRequires : appdirs-python
 BuildRequires : extras
 BuildRequires : extras-python
 BuildRequires : fixtures-python
 BuildRequires : funcsigs-python
-BuildRequires : git-python
 BuildRequires : pbr
 BuildRequires : pip
 BuildRequires : pyrsistent-python
@@ -61,6 +61,7 @@ data components for the bandit package.
 %package python
 Summary: python components for the bandit package.
 Group: Default
+Requires: appdirs-python
 Requires: six-python
 Requires: stevedore
 
