@@ -4,7 +4,7 @@
 #
 Name     : bandit
 Version  : 0.17.3
-Release  : 14
+Release  : 15
 URL      : http://tarballs.openstack.org/bandit/bandit-0.17.3.tar.gz
 Source0  : http://tarballs.openstack.org/bandit/bandit-0.17.3.tar.gz
 Summary  : Security oriented static analyser for python code.
@@ -21,7 +21,6 @@ BuildRequires : fixtures-python
 BuildRequires : funcsigs-python
 BuildRequires : pbr
 BuildRequires : pip
-BuildRequires : pyrsistent-python
 BuildRequires : python-dev
 BuildRequires : python-mock-python
 BuildRequires : python3-dev
@@ -73,6 +72,7 @@ python components for the bandit package.
 %setup -q -n bandit-0.17.3
 
 %build
+export LANG=C
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
