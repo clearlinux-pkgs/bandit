@@ -1,16 +1,134 @@
 CHANGES
 =======
 
-0.17.3
-------
+1.0.1
+-----
 
-* Removing skips and included tests from .bandit
-
-0.17.2
-------
-
+* Adding accurate docs for new bandit config
+* Fixing a bug exposed with try, except, ... tests
+* Ensure error exit codes fail integrations
+* Calm down try,except,pass and try,except,continue
+* Normalizing & editing command-line help text
+* Added try_except_continue plugin
+* Adding test IDs to test doc titles
+* Fixing documentation for hardcoded password tests
+* Delete the config, we dont need it now and its also invalid
+* Improving config handling
+* Blacklists now check node types are valid
+* Fix OpenStack coverage tool
+* Moving test summary to end of screen results
+* Adding debug tox testenv for bandit
+* Improving config generator script
+* Breaking up blacklist import IDs
+* The source of include/exclude conditions was incorrectly reported
+* Update command line help baseline report
+* Fix typos in CLI output
+* Trimming Blacklists
+* Updated legacy profile support
+* Take2: Only use screen when terminal is tty
+* Only use screen when terminal is tty
+* Fixed missing new lines from Skipped file report
+* Adding link to hosted docs in HTML output
+* Fixing an encoding error while writing HTML
+* Fixing bug when filtering blacklists
+* Pass environment variables of proxy to tox
+* Adding profile generation to config generator
+* Additional baseline candidate test coverage
+* Use bdist_wheel instead of wheel
+* Legacy blacklist data is missing some expected fields
+* Fixed typo in bandit/formatters/xml.py
+* Missing letter in blacklist calls doc
+* Removing duplicate Test ID in HTML report
+* Making config optional
+* Ignore all .coverage files and extensions
+* Functional tests for baseline comparisons
+* Fixing output of bytes
+* Adding docs for new style blacklist imports
+* Add bandit to pep8 dependencies
+* Adding JSON output for baseline results
+* Fixing bug with output chars in formatters
+* old blacklist imports refered to 'qualnames' as 'imports'
+* Add test to compare help output with readme
+* Make pep8 *the* linting interface
+* Adding docs for new style blacklist calls
+* Add blacklist plugins to help output
+* Test names are converted to IDs before ever getting this far
+* Remove ignore of F403
+* Added bandit.core.manager unit tests
+* Added config_generator unit tests
+* Added cli.main unit tests
+* Moving bandit baseline unit tests
+* Old config compatibility
+* Add version parameter to the command line
+* Improved unit test coverage for bandit.cli.main
+* Add PyPi badges
+* This permits blacklist data to be filtered by ID
+* Additional CLI main module unit tests
+* Fixing hang in get_module_qualname_from_path
+* Added unit tests for CLI main module
 * Allow certain command line arguments to be passed from file
-* Update .gitreview for stable/0.17.0
+* Broken link in file jinja2_templates.py
+* Misspelling in file plugins/index.rst
+* This fixes the blacklist to look like a plugin so we can filter it
+* Misspelling in main developers doc title
+* Broken link in file mako_templates.py
+* Fixing a bug and cleaning up in blacklisting code
+* Cleaning code
+* Adding some test coverage for config_generator
+* Only decode output of subprocess
+* Broken link to plugin list in file config.rst
+* Support hacking H104
+* Misspelling in error message in file screen.py
+* Breaking out blacklists
+* Bandit baseline unit tests
+* Change into the project directory
+* Small typo fix on the tests include/exclude
+* Pretty up the formatter docs
+* Updated from global requirements
+* Add test ID to the output
+* Add script to test bandit against projects at gate
+* Update docs to include references to EC keys
+* Add ftplib as a insecure protocol to use
+* Added more unit tests for bandit baseline
+* Update readme with latest changes
+* Add missing automodule doc for yaml_load
+* Allow list of tests to skip to be specified on command line
+* Split yaml blacklist check into its own file
+* Enable pep8 testing on tests
+* Remove unnecessary absolute_import logic from modules
+* Improved unit test coverage for baseline module
+* Move cli modules into their own submodule
+* Adding a test for test id on test plugins
+* Pretty up the plugin documentation
+* Changing config generator to display options
+* Proper B5xx test numbering
+* Remove old docs
+* Allow list of tests specified on command line
+* Fixed a misspelling of the word "referred"
+* Allow precise #nosec placement
+* Fix db error when running python34 unit tests
+* Putting plugin config in code
+* Split lines only once per file
+* Faster loc
+* Use binary mode when reading files
+* use six.moves.builtins in python3
+* Replace logger.warn with logger.warning
+* Use == for str comparison
+* Fix comment about value returned
+* Correct code output on python3
+* Display nice error when profile is not found
+* Fix output encoding in baseline
+* Fix detached head baseline
+* Ensure XML goes to binary file on py3
+* Fix text and html output whitespace
+* Changing severity on Bandit Baseline tox target
+* Adding linters target to tox.ini
+* Adding new screen formatter
+* Adding test IDs
+* Fix codesec tox env
+* Adding Bandit Baseline Tox Target
+* Remove show_progress_every from Bandit config file
+* Add docs for formatters
 
 0.17.0
 ------
