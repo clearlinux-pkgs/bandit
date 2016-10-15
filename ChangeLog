@@ -1,6 +1,35 @@
 CHANGES
 =======
 
+1.1.0
+-----
+
+* Fix html escaping
+* Fix some errors in utils.py & calls.py
+* Fix some typos in the files
+* Some spelling error need to be fixed
+* Remove white space between print and ()
+* Add check for httpoxy vulnerability
+* Fixing jenkins failing on coverage reporting
+* Fix the typo in the files
+* Updated from global requirements
+* Remove discover from test-requirements
+* Adding more plugin config docs
+* Adding missing section to documentation about gen_config
+* Add missing Python 3.5 classifier
+* Add a py35 tox venv for upcoming py35 support
+* Add reno for release notes management
+* Updated from global requirements
+* Allow output to default to stdout using argparse
+* Updated from global requirements
+* Add man page for bandit command line
+* Updated from global requirements
+* Updated from global requirements
+* [Trivial] Remove unnecessary executable privilege
+* Updated from global requirements
+* Catch general exception on per-file basis
+* Updated from global requirements
+
 1.0.1
 -----
 
@@ -36,13 +65,13 @@ CHANGES
 * Additional baseline candidate test coverage
 * Use bdist_wheel instead of wheel
 * Legacy blacklist data is missing some expected fields
-* Fixed typo in bandit/formatters/xml.py
+* Fixed typo in  bandit/formatters/xml.py
 * Missing letter in blacklist calls doc
 * Removing duplicate Test ID in HTML report
 * Making config optional
 * Ignore all .coverage files and extensions
 * Functional tests for baseline comparisons
-* Fixing output of bytes
+* (re)Fixing output of bytes
 * Adding docs for new style blacklist imports
 * Add bandit to pep8 dependencies
 * Adding JSON output for baseline results
