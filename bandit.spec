@@ -4,7 +4,7 @@
 #
 Name     : bandit
 Version  : 1.1.0
-Release  : 19
+Release  : 20
 URL      : http://tarballs.openstack.org/bandit/bandit-1.1.0.tar.gz
 Source0  : http://tarballs.openstack.org/bandit/bandit-1.1.0.tar.gz
 Summary  : Security oriented static analyser for python code.
