@@ -6,7 +6,7 @@
 #
 Name     : bandit
 Version  : 1.4.0
-Release  : 22
+Release  : 23
 URL      : http://tarballs.openstack.org/bandit/bandit-1.4.0.tar.gz
 Source0  : http://tarballs.openstack.org/bandit/bandit-1.4.0.tar.gz
 Source99 : http://tarballs.openstack.org/bandit/bandit-1.4.0.tar.gz.asc
