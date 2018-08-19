@@ -1,6 +1,141 @@
 CHANGES
 =======
 
+1.5.0
+-----
+
+* Change ver 1.4.1 references to 1.5.0
+* Add external documentation references (#368)
+* Add more\_info URL to csv formatter (#361)
+* Add support to run bandit as python -m bandit
+* Add more\_info URL to screen formatter (#360)
+* Add more\_info URL to text output (#359)
+* Update Feature\_request.md
+* Update Feature\_request.md
+* Update Bug\_report.md
+* Add experimental Python 3.8-dev to test with (#337)
+* Report dill usage (#347)
+* Add more\_info URL to XML output (#354)
+* Re-eanble functional tests as part of CI (#348)
+* Use html.escape() instead of cgi.escape()
+* Repair some broken see also links in the doc
+* Add subprocess.run to B602
+* Add Python 3.7 support (#327)
+* fix pep8 line length issues
+* add os.tempnam() / os.tmpnam() to blacklist
+* Remove openstack specific utils.exec checks
+* Add development status classifier
+* Enable travis to run pylint and pep8 tox env
+* Fix doc #310
+* Add doc and version
+* Fix code review
+* Fast fix for #286
+* Remove issue comment
+* Improve add shell=True detecction
+* Example for shell kwarg
+* Fix wording (deprecated -> removed)
+* Leave a message explaining that these plugins have been deprecated
+* Remove OpenStack-specific plugins
+* Add missing documentation link for B703
+* Use bandit.readthedocs.io in setup.cfg
+* Add PyCryptodome to import blacklists
+* Add missing B413 import\_pycrypto in README
+* Update the doc links, remove openstack
+* Add a smaller logo that works with the README rst
+* Delete license
+* added apache license
+* Delete license
+* Added logo design
+* added logo license
+* Delete issue\_template.md
+* Update issue templates to new GitHub format
+* Add detection for Django XSS
+* Fix pep8
+* Add Django SQL injection
+* Remove integration test playbooks
+* Show support for Python 3.6
+* Add a build status badge to the README
+* Create an issue template for the project
+* Remove the unused integration tests
+* Create a code of conduct
+* Align with tox.ini python versions
+* Remove nightly and others for now
+* Adds basic .travis.yaml
+* Changing Copyright to Bandit, Developers
+* Correcting copyright change
+* Migrate to new PyPI website
+* Changes OpenStack specifics to PyCQA
+* Stop using slave\_scripts/install-distro-packages.sh
+* Add bindep.txt file
+* Add bandit ID to prefix of more\_info link
+* add lower-constraints job
+* Updated from global requirements
+* Typo in the name of the YAML formatter test
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Fix false positives for pyCrypto
+* Add pycrypto to blacklist
+* Zuul: Remove project name
+* Add more\_info URL to the YAML output
+* Sort the complete plugin list
+* Fix infinite loop issue
+* Update docs links
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Update hacking requirement
+* Update documentation
+* Add more\_info URL to the JSON output
+* Add module loaded through importlib
+* Create doc/requirements.txt
+* Avoid tox\_install.sh for constraints support
+* Migrate to zuul V3
+* Remove extra section from README.rst
+* Updated from global requirements
+* Remove setting of version/release from releasenotes
+* Migrate to stestr
+* Custom formatter
+* Allow specifying targets in ini file
+* Plugin to flag insecure hash functions created using hashlib.new()
+* Cleanup test-requirements
+* [Trivialfix]Fix typos
+* Remove unused None from dict.get()
+* Add .idea to .gitignore
+* Incorrect Test ID in docstring
+* Adds simple handler to provide failed line numbers
+* Updated from global requirements
+* Do not flag new way of escaping in jinja2 plugin
+* Fixed order of arguments in assertEqual
+* Updated from global requirements
+* Add Apache License Content in index.rst
+* Updated from global requirements
+* Enable some off-by-default checks
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Optimize the link address
+* Replace six.iteritems() with .items()
+* Blacklist call of ssl.\_create\_unverified\_context
+* Correct the yaml doc example to be actually yaml
+* Enable coverage report in console output
+* Updated from global requirements
+* Updated from global requirements
+* Yet Another Formatter (yaml)
+* Repair the more info links for two blacklist calls
+* Docs for B319 listed twice
+* Add sha-1 to list of insecure hashes
+* Refactor check\_example to be clearer on error
+* Dump bandit config file lists vertically
+* Allow config for high and medium severity key sizes
+* HTTPSConnection is secure in newer Python
+* Updated from global requirements
+* Typo fix: targetting => targeting
+* Use https for references to openstack.org
+* Alter SQL injection plugin to consider .format strings
+* Add Cryptodome to blacklist and weak ciphers/hash
+* Alter SQL Injection plugin SQL check
+
 1.4.0
 -----
 
@@ -13,7 +148,7 @@ CHANGES
 * Make Bandit's HTML report pass markup validation
 * Remove checking for special characters in shells
 * Add functional tests for B308, B321, and B402
-* Handle curve keyword arg weak_cryptographic_key
+* Handle curve keyword arg weak\_cryptographic\_key
 * Typo in calls doc for input call
 * Fix LOG marker to follow the Python 3 guideline
 * Fix pylint too-many-return-statements errors
@@ -30,7 +165,7 @@ CHANGES
 * Replace 'assertFalse(a in b)' with 'assertNotIn(a, b)'
 * Don't include openstack/common in flake8 exclude list
 * Trivial fixes based on pylint scan
-* Fix typo in test_set.py
+* Fix typo in test\_set.py
 * Replace 'assertTrue(a in b)' with 'assertIn(a, b)'
 
 1.2.0
@@ -47,7 +182,7 @@ CHANGES
 * Updated from global requirements
 * Updated from global requirements
 * Updated from global requirements
-* Fix a typo in test_set.py
+* Fix a typo in test\_set.py
 * Update flake8 ignore list
 * Fix typos in config.py & utils.py
 * Adding "input()" to the blacklist calls list
@@ -74,7 +209,7 @@ CHANGES
 * Updated from global requirements
 * Remove discover from test-requirements
 * Adding more plugin config docs
-* Adding missing section to documentation about gen_config
+* Adding missing section to documentation about gen\_config
 * Add missing Python 3.5 classifier
 * Add a py35 tox venv for upcoming py35 support
 * Add reno for release notes management
@@ -97,7 +232,7 @@ CHANGES
 * Ensure error exit codes fail integrations
 * Calm down try,except,pass and try,except,continue
 * Normalizing & editing command-line help text
-* Added try_except_continue plugin
+* Added try\_except\_continue plugin
 * Adding test IDs to test doc titles
 * Fixing documentation for hardcoded password tests
 * Delete the config, we dont need it now and its also invalid
@@ -122,7 +257,7 @@ CHANGES
 * Pass environment variables of proxy to tox
 * Adding profile generation to config generator
 * Additional baseline candidate test coverage
-* Use bdist_wheel instead of wheel
+* Use bdist\_wheel instead of wheel
 * Legacy blacklist data is missing some expected fields
 * Fixed typo in  bandit/formatters/xml.py
 * Missing letter in blacklist calls doc
@@ -137,13 +272,13 @@ CHANGES
 * Fixing bug with output chars in formatters
 * old blacklist imports refered to 'qualnames' as 'imports'
 * Add test to compare help output with readme
-* Make pep8 *the* linting interface
+* Make pep8 \*the\* linting interface
 * Adding docs for new style blacklist calls
 * Add blacklist plugins to help output
 * Test names are converted to IDs before ever getting this far
 * Remove ignore of F403
 * Added bandit.core.manager unit tests
-* Added config_generator unit tests
+* Added config\_generator unit tests
 * Added cli.main unit tests
 * Moving bandit baseline unit tests
 * Old config compatibility
@@ -152,17 +287,17 @@ CHANGES
 * Add PyPi badges
 * This permits blacklist data to be filtered by ID
 * Additional CLI main module unit tests
-* Fixing hang in get_module_qualname_from_path
+* Fixing hang in get\_module\_qualname\_from\_path
 * Added unit tests for CLI main module
 * Allow certain command line arguments to be passed from file
-* Broken link in file jinja2_templates.py
+* Broken link in file jinja2\_templates.py
 * Misspelling in file plugins/index.rst
 * This fixes the blacklist to look like a plugin so we can filter it
 * Misspelling in main developers doc title
-* Broken link in file mako_templates.py
+* Broken link in file mako\_templates.py
 * Fixing a bug and cleaning up in blacklisting code
 * Cleaning code
-* Adding some test coverage for config_generator
+* Adding some test coverage for config\_generator
 * Only decode output of subprocess
 * Broken link to plugin list in file config.rst
 * Support hacking H104
@@ -179,11 +314,11 @@ CHANGES
 * Add ftplib as a insecure protocol to use
 * Added more unit tests for bandit baseline
 * Update readme with latest changes
-* Add missing automodule doc for yaml_load
+* Add missing automodule doc for yaml\_load
 * Allow list of tests to skip to be specified on command line
 * Split yaml blacklist check into its own file
 * Enable pep8 testing on tests
-* Remove unnecessary absolute_import logic from modules
+* Remove unnecessary absolute\_import logic from modules
 * Improved unit test coverage for baseline module
 * Move cli modules into their own submodule
 * Adding a test for test id on test plugins
@@ -215,7 +350,7 @@ CHANGES
 * Adding test IDs
 * Fix codesec tox env
 * Adding Bandit Baseline Tox Target
-* Remove show_progress_every from Bandit config file
+* Remove show\_progress\_every from Bandit config file
 * Add docs for formatters
 
 0.17.0
@@ -234,7 +369,7 @@ CHANGES
 
 * Updated from global requirements
 * bandit-config-generator: Add documentation
-* Lowering confidence of "any_other_function_with_shell_equals_true"
+* Lowering confidence of "any\_other\_function\_with\_shell\_equals\_true"
 * Simpler baseline matching
 * Cleaning up node visitor
 * Removing unused code
@@ -258,7 +393,7 @@ CHANGES
 * Fixing bug when encountering tuple params
 * Fix simple bug in text formatter excluded files list
 * Improving Bandit Baseline Reporting
-* blacklist_calls: add Python3 and six versions of some functions
+* blacklist\_calls: add Python3 and six versions of some functions
 * Test for bug 1513091
 
 0.15.2
@@ -287,11 +422,11 @@ CHANGES
 * Adding metrics and CSS styling to HTML formatter
 * This adds baseline filtering to bandit
 * Ensure each plugin is linked to appropriate sec guidance doc
-* Add missing documentation for start_process_with_a_shell
+* Add missing documentation for start\_process\_with\_a\_shell
 * Collecting metrics code in one place
 * Don't create files if we did not ask for them
 * Add check for weak elliptic curve keys
-* Add doc for weak_cryptographic_key plugin
+* Add doc for weak\_cryptographic\_key plugin
 
 0.14.1
 ------
@@ -322,12 +457,12 @@ CHANGES
 * Updated from global requirements
 * Adding docs for SSL/TLS version tests
 * Adding docs for try, except, pass
-* Adding start_process_with_partial_path docs
-* Adding docs for blacklist_imports test
+* Adding start\_process\_with\_partial\_path docs
+* Adding docs for blacklist\_imports test
 * Increasing coverage of try-except-pass to 100%
 * Fixing bug introduced by manager refactor
 * Adding documentation for blacklist calls
-* Adding "exec_used" documentation
+* Adding "exec\_used" documentation
 * Removing argument printing
 * Cleanup the blacklist plugin
 * Cache blacklisted functions -> 5% faster
@@ -343,26 +478,26 @@ CHANGES
 * Simplifying Result Store
 * Enabling coverage reporting in tox
 * Dont read the wordlist file in on every test call, cache it
-* Unit testing of meta_ast.py
-* bad_file_permissions check: Use correct filename
+* Unit testing of meta\_ast.py
+* bad\_file\_permissions check: Use correct filename
 * Skip '/tests/' by default
 * Add known weak ciphers to blacklisted calls
-* Adding "hardcoded_sql_expressions" documentation
-* Adding "hardcoded_tmp_directory" documentation
-* Adding "hardcoded_password" documentation
-* Adding assert_used documentation
-* Fix manager having no attribute '_init_logger'
+* Adding "hardcoded\_sql\_expressions" documentation
+* Adding "hardcoded\_tmp\_directory" documentation
+* Adding "hardcoded\_password" documentation
+* Adding assert\_used documentation
+* Fix manager having no attribute '\_init\_logger'
 * Generate module docs
 * Add unit tests for the formatters
 * Raise exceptions from BanditConfig rather than exit
 * Removing class level variables
-* Introduce wildcards to blacklist_calls plugin
+* Introduce wildcards to blacklist\_calls plugin
 * Adding unit tests for bandit.core.context.Context
 * Remove redundant quotes in bandit.yaml
 * meta-ast is only needed if we are in debug mode
-* Adding any_other_function_with_shell_equals_true documentation
-* Adding "execute_with_run_as_root_equals_true" documentation
-* Adding "hardcoded_bind_all_interfaces" documentation
+* Adding any\_other\_function\_with\_shell\_equals\_true documentation
+* Adding "execute\_with\_run\_as\_root\_equals\_true" documentation
+* Adding "hardcoded\_bind\_all\_interfaces" documentation
 * Add a new check for weak RSA and DSA key sizes
 * Update .gitignore for docs
 * Use addCleanup rather than tearDown
@@ -371,23 +506,23 @@ CHANGES
 * Adding documentation for configuration
 * Additional unit test coverage for core/utils.py
 * Fix typos in bandit.yaml
-* Replace incorrect safe_str
+* Replace incorrect safe\_str
 * Trivial fix to beautify bandit.yaml
 * Add Bytes AST support
 * Variable file not defined in error path
 * Adding test tool for check OpenStack projects' Bandit job
 * Remove unreachable code in config.py
 * Unit tests for bandit.core.config
-* Adding a check for key in get_call_arg_at_position
-* Py3 compatibility fix in lines_with_context() util
-* Remove unused safe_unicode() utility function
+* Adding a check for key in get\_call\_arg\_at\_position
+* Py3 compatibility fix in lines\_with\_context() util
+* Remove unused safe\_unicode() utility function
 * Adding check for node key in Context
-* Remove unused describe_symbol() utility function
+* Remove unused describe\_symbol() utility function
 * Better function to count lines in a file
-* Adding the key lookup to Context.call_args_string
-* Remove unused test_basic.py
-* Rename core.test_config to test_bandit
-* Adding a check for call in call_args_count
+* Adding the key lookup to Context.call\_args\_string
+* Remove unused test\_basic.py
+* Rename core.test\_config to test\_bandit
+* Adding a check for call in call\_args\_count
 * Refactoring Unit Test Directories
 * Update gitignore for coverage
 * Update git clone repo
@@ -404,7 +539,7 @@ CHANGES
 * Add other known weak MD hash modules
 * Capture warnings for missing plugins or config in normal logging
 * Skip a test if it requires config but none is found
-* Clean up test_config
+* Clean up test\_config
 * Add info: License, Source, Bugs and Docs to README
 
 0.13.0
@@ -421,7 +556,7 @@ CHANGES
 * Adding report timestamp
 * Bug fix for SQL tests
 * Adding a more informative help message for "-l"
-* Activate pep8 check that _ is imported
+* Activate pep8 check that \_ is imported
 * Add all available plugins to an example profile
 * Revised XML tests
 * Adding documentation framework
@@ -429,9 +564,9 @@ CHANGES
 * Improving SQL Injection detection
 * Fixing up random to be less noisy
 * Bring the logger up as soon as possible
-* Bug fix in secret_config_option plugin
+* Bug fix in secret\_config\_option plugin
 * Consider other hardcoded tmp paths
-* Install word_list, raise exception if cannot find
+* Install word\_list, raise exception if cannot find
 * Modifying Paramiko Injection plugin
 * Adding test for Try, Except, Pass
 * Add tool for reporting Bandit OpenStack coverage
@@ -498,16 +633,16 @@ CHANGES
 * Fix vulnerability aggregation bug
 * Fixed nosec flagging
 * Moving lineno into generic visitor
-* Make subprocess without `shell=True` into a plugin
+* Make subprocess without \`shell=True\` into a plugin
 * Tweaking severity for a few plugins
 * Remove Python 2.6 from setup.cfg
 * Correct supported Python versions in setup.cfg
-* Update the config file, and use yaml.safe_load()
+* Update the config file, and use yaml.safe\_load()
 * Wildcard injection requires a shell
 * Fixing uncaught 'InvalidModulePath' exception
 * Fix a leftover tuple unpacking in reporting code
 * Add tests for subprocesses and deserialization
-* Fixes for node_visitor, sql and hardcoded password tests
+* Fixes for node\_visitor, sql and hardcoded password tests
 * Add mako templating plugin and XSS profile
 * Refactored AST processing
 * Refactor functional tests to clarify scoring
@@ -515,7 +650,7 @@ CHANGES
 * Return the full name used in calls
 * Add mock to test-requirements
 * Add ceilometer to rootwrap check
-* Minor cleanup for _matches_glob_list function
+* Minor cleanup for \_matches\_glob\_list function
 * Add check for secret=True on oslo password options
 * assertEqual should be (expected, actual)
 * Adds line ranges, DRYs code, fixes #nosec
@@ -535,22 +670,22 @@ CHANGES
 * Adding meaningful exit codes to support use in gate
 * Rename README.md to README.rst
 * Update test-requirements.txt to match global requirements
-* Add __repr__ to the context object
+* Add \_\_repr\_\_ to the context object
 * Minor changes to profile-related debug output
 
 0.9.0
 -----
 
-* Remove the check for PROTOCOL_SSLv23
+* Remove the check for PROTOCOL\_SSLv23
 * Make func, class name definitions fully qualified
-* Add unaliased mod name to import_aliases; Fix tests
+* Add unaliased mod name to import\_aliases; Fix tests
 * Blacklist urlopen-like functions in urllib, urllib2
 * Add yaml.load to blacklist with yaml example file
-* Fix a reported bug when bandit encounters "__import__()"
+* Fix a reported bug when bandit encounters "\_\_import\_\_()"
 * Hardening bandit in the face of buggy plugins or odd ASTs
 * Graceful degradation when failing to full qualify an attr node
 * Fixing an oversight when processing none-attr nodes
-* Refactoring "checks_functions" to check function definitions
+* Refactoring "checks\_functions" to check function definitions
 * Removing TODO (to be tracked in Bandit wiki)
 * Updated README file
 * Adding a set of functional tests based on the examples folder
@@ -559,10 +694,10 @@ CHANGES
 * Adding a basic test for the gate (need at least one to pass)
 * Enabling PEP8 tests in tox and re-working source to comply
 * Making Bandit into an installable package and adding tox tests
-* Removing default '' return for ast_args_to_str()
+* Removing default '' return for ast\_args\_to\_str()
 * Adding a test for use of HTTPSConnection
 * Adding a check to bandit for use of 'exec'
-* Better checks against blacklisted modules, catch __import__
+* Better checks against blacklisted modules, catch \_\_import\_\_
 * Adding SSL/TLS protocol version checks
 * Temporarily commenting out hardcoded password test, it's broken
 * Add .gitreview file
@@ -589,20 +724,20 @@ CHANGES
 * Create settings system, moved more fixed values to config, improved readability
 * First pass at moving some things to config, begin cleaning up code
 * Separate each test into its own file
-* Fixed a bug with handling _ast.Tuple
+* Fixed a bug with handling \_ast.Tuple
 * Allow creation of test profiles and switch config to yaml
 * Test type marked using decorators and tests now automatically discovered from plugins directory
 * Test type marked using decorators and tests now automatically discovered from plugins directory
 * Adding a property to access the raw AST node from context instance
 * Changed to pass Context instance to tests, rather than raw context
 * Refactoring to move the AST implementation details out of tests
-* Adding example file for utils.execute* shell=True tests
+* Adding example file for utils.execute\* shell=True tests
 * Adding more unsafe shell=True usage checks for OS utils library
 * Wildcard injection tests crash on non-string args
 * Updated README
 * Updated README
 * Updated TODO
-* Test for mark_safe() calls
+* Test for mark\_safe() calls
 * Updated README
 * Broader test for calls with shell=True parameter
 * Updated README
@@ -613,7 +748,7 @@ CHANGES
 * Updated TODO
 * Updated README
 * Rework case where no findings are found
-* Modify call_bad_names test to use regex and add to blacklist
+* Modify call\_bad\_names test to use regex and add to blacklist
 * Introduce and utilize module-level constants
 * Specify UTF-8 coding
 * Updated TODO
@@ -635,10 +770,10 @@ CHANGES
 * Fix 'self' reference in manager
 * Add support for skipping files
 * Fix relative imports and error handling
-* Reposition setting of lineno in visit_Import and visit_ImportFrom
+* Reposition setting of lineno in visit\_Import and visit\_ImportFrom
 * Support dynamic loading of tests
 * Refactor the call tests to use the new test context
-* Remove unused ast_args_to_str method
+* Remove unused ast\_args\_to\_str method
 * refactor to extract imports tests and build context
 * new bad imports example
 * starting refactor to extract tests from core
