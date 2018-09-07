@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+1.5.1
+-----
+
+* Adding test case for traversal crash
+* New plugin to check for ignoring host keys
+* Fixed crash on dynamic import traversal (#369)
+
 1.5.0
 -----
 
