@@ -4,16 +4,16 @@
 #
 Name     : bandit
 Version  : 1.5.1
-Release  : 28
+Release  : 29
 URL      : https://files.pythonhosted.org/packages/c9/60/2c967faf70596fcef42a0737c63fe1321b8e51e15eec8f7883e333eba5a5/bandit-1.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c9/60/2c967faf70596fcef42a0737c63fe1321b8e51e15eec8f7883e333eba5a5/bandit-1.5.1.tar.gz
 Summary  : Security oriented static analyser for python code.
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: bandit-bin
-Requires: bandit-python3
-Requires: bandit-license
-Requires: bandit-python
+Requires: bandit-bin = %{version}-%{release}
+Requires: bandit-license = %{version}-%{release}
+Requires: bandit-python = %{version}-%{release}
+Requires: bandit-python3 = %{version}-%{release}
 Requires: GitPython
 Requires: PyYAML
 Requires: Sphinx
@@ -29,7 +29,7 @@ BuildRequires : pbr
 %package bin
 Summary: bin components for the bandit package.
 Group: Binaries
-Requires: bandit-license
+Requires: bandit-license = %{version}-%{release}
 
 %description bin
 bin components for the bandit package.
@@ -46,7 +46,7 @@ license components for the bandit package.
 %package python
 Summary: python components for the bandit package.
 Group: Default
-Requires: bandit-python3
+Requires: bandit-python3 = %{version}-%{release}
 
 %description python
 python components for the bandit package.
@@ -69,8 +69,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536299111
-python3 setup.py build -b py3
+export SOURCE_DATE_EPOCH=1541264496
+python3 setup.py build
 
 %check
 export http_proxy=http://127.0.0.1:9/
@@ -79,9 +79,9 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 py.test-2.7 --verbose || :
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/bandit
-cp LICENSE %{buildroot}/usr/share/doc/bandit/LICENSE
-python3 -tt setup.py build -b py3 install --root=%{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/bandit
+cp LICENSE %{buildroot}/usr/share/package-licenses/bandit/LICENSE
+python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
@@ -96,8 +96,8 @@ echo ----[ mark ]----
 /usr/bin/bandit-config-generator
 
 %files license
-%defattr(-,root,root,-)
-/usr/share/doc/bandit/LICENSE
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/bandit/LICENSE
 
 %files python
 %defattr(-,root,root,-)
