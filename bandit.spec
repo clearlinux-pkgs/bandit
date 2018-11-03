@@ -4,7 +4,7 @@
 #
 Name     : bandit
 Version  : 1.5.1
-Release  : 29
+Release  : 30
 URL      : https://files.pythonhosted.org/packages/c9/60/2c967faf70596fcef42a0737c63fe1321b8e51e15eec8f7883e333eba5a5/bandit-1.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c9/60/2c967faf70596fcef42a0737c63fe1321b8e51e15eec8f7883e333eba5a5/bandit-1.5.1.tar.gz
 Summary  : Security oriented static analyser for python code.
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541264496
+export SOURCE_DATE_EPOCH=1541265486
 python3 setup.py build
 
 %check
