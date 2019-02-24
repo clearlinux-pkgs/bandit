@@ -4,10 +4,10 @@
 #
 Name     : bandit
 Version  : 1.5.1
-Release  : 31
+Release  : 33
 URL      : https://files.pythonhosted.org/packages/c9/60/2c967faf70596fcef42a0737c63fe1321b8e51e15eec8f7883e333eba5a5/bandit-1.5.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/c9/60/2c967faf70596fcef42a0737c63fe1321b8e51e15eec8f7883e333eba5a5/bandit-1.5.1.tar.gz
-Summary  : Security oriented static analyser for python code.
+Summary  : Python security linter from OpenStack Security
 Group    : Development/Tools
 License  : Apache-2.0
 Requires: bandit-bin = %{version}-%{release}
@@ -16,7 +16,6 @@ Requires: bandit-python = %{version}-%{release}
 Requires: bandit-python3 = %{version}-%{release}
 Requires: GitPython
 Requires: PyYAML
-Requires: Sphinx
 Requires: six
 Requires: stevedore
 BuildRequires : buildreq-distutils3
@@ -69,7 +68,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541265486
+export SOURCE_DATE_EPOCH=1551025553
+export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
 %check
