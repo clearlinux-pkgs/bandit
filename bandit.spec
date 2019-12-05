@@ -4,7 +4,7 @@
 #
 Name     : bandit
 Version  : 1.6.2
-Release  : 38
+Release  : 39
 URL      : https://files.pythonhosted.org/packages/05/51/cbfd4b5a383d51a73a9e8cbf152037a212e0058ee8b329d4501f74cdddef/bandit-1.6.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/05/51/cbfd4b5a383d51a73a9e8cbf152037a212e0058ee8b329d4501f74cdddef/bandit-1.6.2.tar.gz
 Summary  : Python security linter from OpenStack Security
